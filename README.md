@@ -27,5 +27,6 @@ This project implements a simple Whack-a-Mole-style game on FPGA hardware using 
 4. Score increment
 5. Output display
 
-
+# Video
+https://github.com/user-attachments/assets/597e9df4-8867-4a6e-bcd5-d9b2788b13a3
 
