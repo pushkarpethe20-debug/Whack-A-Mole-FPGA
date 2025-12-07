@@ -17,7 +17,6 @@ module wack_a_mole(
     reg reset_signal;
 
     // Debounce logic for start button
-    // Button debouncing and edge detection
     always @(posedge clk) begin
         start_btn_prev <= start_btn;
         reset_btn_prev <= reset_btn;
@@ -29,9 +28,8 @@ module wack_a_mole(
             reset_signal <= 0;
     end
 
-    // --------------------------------------
+  
     // Game start logic
-    // --------------------------------------
     always @(posedge clk or posedge reset_signal) begin
         if (reset_signal) begin
             game_started <= 0;
