@@ -3,17 +3,14 @@ NET "clk" LOC = "P84";
 NET "clk" TNM_NET = "clk";
 TIMESPEC "TS_clk" = PERIOD "clk" 20 ns HIGH 50%;  # 50MHz clock
 
-###############################################################################
-## Buttons (active LOW with pullups)
+## Buttons 
 NET "reset_btn" LOC = "P40";     # PB[0] - Reset button
 NET "start_btn" LOC = "P41";     # PB[1] - Start button
 
-###############################################################################
 ## Game Over LED
 NET "game_over_led" LOC = "P34";
 
-###############################################################################
-## Switches (7-bit mole switches)
+## Switches 
 NET "switches[0]" LOC = "P22"; # Rightmost switch
 NET "switches[1]" LOC = "P21";
 NET "switches[2]" LOC = "P17";
@@ -22,8 +19,7 @@ NET "switches[4]" LOC = "P15";
 NET "switches[5]" LOC = "P14";
 NET "switches[6]" LOC = "P12"; # Leftmost switch
 
-###############################################################################
-## LEDs (7 mole hole LEDs)
+## LEDs 
 NET "leds[0]" LOC = "P33"; # Rightmost LED
 NET "leds[1]" LOC = "P32";
 NET "leds[2]" LOC = "P30";
@@ -32,8 +28,7 @@ NET "leds[4]" LOC = "P27";
 NET "leds[5]" LOC = "P26";
 NET "leds[6]" LOC = "P24"; # Leftmost LED
 
-###############################################################################
-## 7-Segment Display - Segment Pins (Common Anode, Active LOW)
+## 7-Segment Display - Segment Pins 
 NET "seg[0]" LOC = "P137";  # Segment A
 NET "seg[1]" LOC = "P138";  # Segment B
 NET "seg[2]" LOC = "P139";  # Segment C
@@ -41,10 +36,9 @@ NET "seg[3]" LOC = "P140";  # Segment D
 NET "seg[4]" LOC = "P141";  # Segment E
 NET "seg[5]" LOC = "P142";  # Segment F
 NET "seg[6]" LOC = "P143";  # Segment G
-NET "seg[7]" LOC = "P144";  # Decimal Point (not used)
+NET "seg[7]" LOC = "P144";  # Decimal Point
 
-###############################################################################
-## 7-Segment Digit Enable Pins (Active LOW)
+## 7-Segment Digit Enable Pins 
 NET "en[0]" LOC = "P127";  # Digit 0 (rightmost digit)
 NET "en[1]" LOC = "P131";  # Digit 1
 NET "en[2]" LOC = "P132";  # Digit 2
