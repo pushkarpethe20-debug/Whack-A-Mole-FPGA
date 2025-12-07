@@ -9,8 +9,23 @@ This project implements a simple Whack-a-Mole-style game on FPGA hardware using 
 4. After 30 seconds, the game stops, and the score is displayed on a 7-segment output.
 
 # Tools and Hardware Used
-1. 
+1. Xilinx ISE
 2. Spartan-6 FPGA board
-3. 
+
+# Steps to Implement
+1. Open Xilinx ISE and create a new project.
+2. Add .v source file.
+3. Add .ucf file to assign pins.
+4. Generate .bit file (already provided in repo).
+5. Program FPGA board.
+6. Play the game.
+
+# Game Logic Used
+1. Timer-based LED turn duration
+2. Random selection logic
+3. Switch monitoring
+4. Score increment
+5. Output display
+
 
 
